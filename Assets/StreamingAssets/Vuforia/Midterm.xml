@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="Rig4" size="7.000000 7.000000"/>
+        <ImageTarget name="Rig3" size="7.000000 7.000000"/>
+        <ImageTarget name="Rig2" size="7.000000 7.000000"/>
+        <ImageTarget name="Rig1" size="7.000000 7.000000"/>
+        <ImageTarget name="Land.Front" size="40.000000 25.000000"/>
+        <ImageTarget name="Land.Back" size="40.000000 25.000000"/>
+        <ImageTarget name="Land.Right" size="10.000000 25.000000"/>
+        <ImageTarget name="Land.Left" size="10.000000 25.000000"/>
+        <ImageTarget name="Land.Top" size="40.000000 10.000000"/>
+        <ImageTarget name="Land.Bottom" size="40.000000 10.000000"/>
+        <MultiTarget name="Land">
+            <Part name="Land.Left" translation="-20.0 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="Land.Right" translation="20.0 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="Land.Front" translation="0 0 5.0" rotation="AD: 1 0 0 0"/>
+            <Part name="Land.Back" translation="0 0 -5.0" rotation="AD: 0 1 0 180"/>
+            <Part name="Land.Top" translation="0 12.5 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="Land.Bottom" translation="0 -12.5 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

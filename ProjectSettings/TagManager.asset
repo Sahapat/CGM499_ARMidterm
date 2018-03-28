@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - FrontLand
+  - OilNode
+  - Oil
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: InsideLand
+    uniqueID: 3091480233
+    locked: 0
+  - name: objectInLand
+    uniqueID: 862833151
+    locked: 0
+  - name: Land
+    uniqueID: 1955097007
+    locked: 0
+  - name: outLand
+    uniqueID: 2192892435
+    locked: 0
