@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
         moneyManagerScript.moneyStorage = 500;
         merchantScript.InitTrend();
         merchantScript.unSelected();
-        merchantScript.initmerchantprice(Random.Range(5, 10), Random.Range(5, 10));
+        merchantScript.initmerchantprice(6, 6);
         isGameStart = true;
         isGamePause = true;
     }
@@ -70,6 +70,13 @@ public class GameController : MonoBehaviour
         {
             if (!isGamePause)
             {
+                if(gameTimeScript.minute < 0)
+                {
+                    gameTimeScript.stopCount();
+                    gameTimeScript.minute = 0;
+                    isGameStart = false;
+                    uIControllerScript.endGameShowing(moneyManagerScript.moneyStorage);
+                }
                 if (!isSetCount)
                 {
                     gameTimeScript.startCount(-1);
