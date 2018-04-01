@@ -22,6 +22,10 @@ public class UIController : MonoBehaviour
     [SerializeField]
     private Text switchScanStateText;
     [SerializeField]
+    private Text totalMoneyTxt;
+    [SerializeField]
+    private GameObject endGame;
+    [SerializeField]
     private GameObject newGame;
 
     [Header("ScriptsReference")]
@@ -45,6 +49,11 @@ public class UIController : MonoBehaviour
     {
         merchantScritp.unSelected();
         updateUI();
+    }
+    public void endGameShowing(int money)
+    {
+        endGame.SetActive(!endGame.activeSelf);
+        totalMoneyTxt.text = money.ToString();
     }
     public void newGameShowing()
     {
